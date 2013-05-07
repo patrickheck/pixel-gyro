@@ -1,6 +1,7 @@
 <?php 
 /*
 	Pixel-Gyro 1.0
+	
 	This script searches for all images in a given directory and displays them as seperate pages.
 	Great for presenting mockups.
 	
