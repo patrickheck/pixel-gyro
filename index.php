@@ -33,7 +33,7 @@ if (file_exists('config.php')) {
 
 // What is the name of the website? This is used for the <title>.
 if (! defined("SITENAME")) {
-	define("SITENAME","");
+	define("SITENAME","Pixel-Gyro");
 }
 
 // In which subdiretory to look for images?
