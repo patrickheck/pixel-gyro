@@ -11,7 +11,7 @@ exact same height as the image underneath and a width that can be set in the con
 
 ## Usage
 * Copy repository content to a web directory
-* Drop all your images in "png" format inside the "img" folder
+* Drop all your images in "png" format inside the "img" folder.
   Your images should be broad enough for large screens (e.g. 2000 x 2000 px)
 * Now navigate to the directory with your browser. Done.
 
