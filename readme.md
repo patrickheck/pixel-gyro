@@ -10,8 +10,9 @@ exact same height as the image underneath and a width that can be set in the con
 (Default is 1024px.) 
 
 ## Usage
-* Copy repository content to a web directory
+* Clone repository to a web directory
 * Drop all your images in "png" format inside the "img" folder.
+  (You can also use "jpg", but you have to specify it in your config)
   Your images should be broad enough for large screens (e.g. 2000 x 2000 px)
 * Now navigate to the directory with your browser. Done.
 
