@@ -123,5 +123,3 @@ body {
 <a href="<?php echo $_SERVER['PHP_SELF'] . '?n=' . $nextindex ?>"><img src="<?php echo $_SERVER['PHP_SELF'] . '?height=' . $imgheight ?>" /></a>
 </body>
 </html>
-
-
