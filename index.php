@@ -52,7 +52,7 @@ if (! defined("CLICKABLEWIDTH")) {
 	define("CLICKABLEWIDTH",1024);
 }
 
-// how broad should the clickable area be?
+// Show navigation bar at bottom?
 if (! defined("SHOWNAV")) {
 	define("SHOWNAV",true);
 }
@@ -119,16 +119,8 @@ if ($n == 0) {
 <title><?=htmlentities(SITENAME,ENT_QUOTES,'UTF-8')?> :: <?=htmlentities(basename($imgpath,".".FILEEXTENSION),ENT_QUOTES,'UTF-8')?></title>
 <link rel="stylesheet" href="css/pixelgyro-bootstrap.css">
 <style>
-body, html, img {
-	margin:0;
-	border:0;
-	padding:0;
-	outline:none;
-}
-.content {
+.slide {
 	background: #fff url("<?=IMGSUBDIR?>/<?=rawurlencode(basename($imgpath))?>") center top repeat-x;
-	text-align:center;
-	margin: 0 auto;
 }
 </style>
 </head>
@@ -150,7 +142,7 @@ body, html, img {
 </div>
 </div>
 <?php endif; ?>
-<div class="content">
+<div class="slide">
 <a title="Click for next image" href="<?php echo $_SERVER['PHP_SELF'] . '?n=' . $nextindex ?>"><img src="<?php echo $_SERVER['PHP_SELF'] . '?height=' . $imgheight ?>" /></a>
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>

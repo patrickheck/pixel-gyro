@@ -33,7 +33,7 @@ following constants:
     // How broad should the clickable area be?
     define("CLICKABLEWIDTH",1024);
 
-    // Show Navigation Bar on Top?
+    // Show navigation bar at bottom?
     define("SHOWNAV",true);
 
 	## Licence
