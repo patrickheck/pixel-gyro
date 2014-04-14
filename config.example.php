@@ -15,3 +15,6 @@ define("FILEEXTENSION","png");
 
 // how broad should the clickable area be?
 define("CLICKABLEWIDTH",1024);
+
+// Show Navigation Bar on Top
+define("SHOWNAV",true);

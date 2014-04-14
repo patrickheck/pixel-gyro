@@ -52,6 +52,11 @@ if (! defined("CLICKABLEWIDTH")) {
 	define("CLICKABLEWIDTH",1024);
 }
 
+// how broad should the clickable area be?
+if (! defined("SHOWNAV")) {
+	define("SHOWNAV",true);
+}
+
 /* if the "height" attribute is given return a transparent image instead of HTML
  * this is used to define the clickable area
  */
@@ -102,10 +107,17 @@ if (isset($files[$n+1])) {
 } else {
 	$nextindex = 0;
 }
+if ($n == 0) {
+	$previndex = sizeof($files) - 1;
+} else {
+	$previndex = $n-1;
+}
+
 ?><html>
 <head>
 <meta charset="utf-8">
 <title><?=htmlentities(SITENAME,ENT_QUOTES,'UTF-8')?> :: <?=htmlentities(basename($imgpath,".".FILEEXTENSION),ENT_QUOTES,'UTF-8')?></title>
+<link rel="stylesheet" href="css/pixelgyro-bootstrap.css">
 <style>
 body, html, img {
 	margin:0;
@@ -113,7 +125,7 @@ body, html, img {
 	padding:0;
 	outline:none;
 }
-body {
+.content {
 	background: #fff url("<?=IMGSUBDIR?>/<?=rawurlencode(basename($imgpath))?>") center top repeat-x;
 	text-align:center;
 	margin: 0 auto;
@@ -121,6 +133,27 @@ body {
 </style>
 </head>
 <body>
+<?php if (SHOWNAV): ?>
+<div class="navigation dark">
+  <div class="container-fluid">
+<div class="col-sm-2 col-xs-4 paging">
+	<a href="<?php echo $_SERVER['PHP_SELF'] . '?n=' . $previndex ?>"><i class="fa fa-arrow-circle-left"></i></a>
+	<span class="pagenumber"><?php echo $n+1 ?>/<?php echo sizeof($files) ?></span>
+	<a href="<?php echo $_SERVER['PHP_SELF'] . '?n=' . $nextindex ?>"><i class="fa fa-arrow-circle-right"></i></a>
+</div>
+<div class="col-xs-8 col-sm-10">
+	<strong><?=htmlentities(SITENAME,ENT_QUOTES,'UTF-8')?></strong> :
+	
+	<?=htmlentities(basename($imgpath,".".FILEEXTENSION),ENT_QUOTES,'UTF-8')?>
+<button type="button" class="close" aria-hidden="true">&times;</button>
+</div>
+</div>
+</div>
+<?php endif; ?>
+<div class="content">
 <a title="Click for next image" href="<?php echo $_SERVER['PHP_SELF'] . '?n=' . $nextindex ?>"><img src="<?php echo $_SERVER['PHP_SELF'] . '?height=' . $imgheight ?>" /></a>
+</div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

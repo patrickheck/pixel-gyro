@@ -1,0 +1,30 @@
+{
+  "name": "Pixel-Gyro",
+  "version": "1.0",
+  "homepage": "https://github.com/patrickheck/pixel-gyro",
+  "authors": [
+    "Patrick Heck <patrick@patrickheck.de>"
+  ],
+  "description": "A neat little script, that lets you click through static mockup images",
+  "main": "index.php",
+  "keywords": [
+    "mockups",
+    "gallery",
+    "presentation",
+    "wireframes"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1",
+    "Font-Awesome": "~4.0.3"
+  }
+}
