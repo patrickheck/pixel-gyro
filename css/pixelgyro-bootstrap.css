@@ -7066,7 +7066,10 @@ button.close {
 }
 .slide {
   text-align: center;
-  margin: 0 auto 41px;
+  margin: 0 auto;
+}
+.slide.with-nav {
+  margin-bottom: 41px;
 }
 .clearfix:before,
 .clearfix:after,

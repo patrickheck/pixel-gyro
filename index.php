@@ -52,7 +52,7 @@ if (! defined("CLICKABLEWIDTH")) {
 	define("CLICKABLEWIDTH",1024);
 }
 
-// Show navigation bar at bottom?
+// how broad should the clickable area be?
 if (! defined("SHOWNAV")) {
 	define("SHOWNAV",true);
 }
@@ -142,7 +142,7 @@ if ($n == 0) {
 </div>
 </div>
 <?php endif; ?>
-<div class="slide">
+<div class="slide <?=SHOWNAV?'with-nav':''?>">
 <a title="Click for next image" href="<?php echo $_SERVER['PHP_SELF'] . '?n=' . $nextindex ?>"><img src="<?php echo $_SERVER['PHP_SELF'] . '?height=' . $imgheight ?>" /></a>
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
