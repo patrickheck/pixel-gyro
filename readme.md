@@ -36,7 +36,7 @@ following constants:
     // Show Navigation Bar on Top?
     define("SHOWNAV",true);
 
-	## Licence
+## Licence
 
 The MIT License (MIT)
 
