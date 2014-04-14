@@ -1,4 +1,4 @@
-# Pixel-Gyro 1.0
+# Pixel-Gyro 1.1
 
 This script searches for all images in a given directory and displays them as seperate pages.
 Great for presenting mockups. The center of the page will be clickable and link to the next image.
@@ -30,10 +30,13 @@ following constants:
     // What ending do the image files have?
     define("FILEEXTENSION","png");
     
-    // how broad should the clickable area be?
+    // How broad should the clickable area be?
     define("CLICKABLEWIDTH",1024);
 
-## Licence
+    // Show Navigation Bar on Top?
+    define("SHOWNAV",true);
+
+	## Licence
 
 The MIT License (MIT)
 
