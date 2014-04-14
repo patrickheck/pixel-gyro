@@ -104,7 +104,8 @@ if (isset($files[$n+1])) {
 }
 ?><html>
 <head>
-<title><?=SITENAME?> :: <?=basename($imgpath,".".FILEEXTENSION)?></title>
+<meta charset="utf-8">
+<title><?=htmlentities(SITENAME,ENT_QUOTES,'UTF-8')?> :: <?=htmlentities(basename($imgpath,".".FILEEXTENSION),ENT_QUOTES,'UTF-8')?></title>
 <style>
 body, html, img {
 	margin:0;
@@ -120,6 +121,6 @@ body {
 </style>
 </head>
 <body>
-<a href="<?php echo $_SERVER['PHP_SELF'] . '?n=' . $nextindex ?>"><img src="<?php echo $_SERVER['PHP_SELF'] . '?height=' . $imgheight ?>" /></a>
+<a title="Click for next image" href="<?php echo $_SERVER['PHP_SELF'] . '?n=' . $nextindex ?>"><img src="<?php echo $_SERVER['PHP_SELF'] . '?height=' . $imgheight ?>" /></a>
 </body>
 </html>
