@@ -24,7 +24,7 @@ following constants:
     // What is the name of the website? This is used for the <title>.
     define("SITENAME","Pixel-Gyro");
     
-    // In which subdiretory to look for images?
+    // In which subdirectory to look for images?
     define("IMGSUBDIR","img");
     
     // What ending do the image files have?
