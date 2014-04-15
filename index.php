@@ -1,6 +1,6 @@
 <?php 
 /*
-	Pixel-Gyro 1.0
+	Pixel-Gyro 1.1
 	
 	This script searches for all images in a given directory and displays them as seperate pages.
 	Great for presenting mockups.
@@ -113,10 +113,12 @@ if ($n == 0) {
 	$previndex = $n-1;
 }
 
-?><html>
+?><!doctype html>
+<html>
 <head>
 <meta charset="utf-8">
 <title><?=htmlentities(SITENAME,ENT_QUOTES,'UTF-8')?> :: <?=htmlentities(basename($imgpath,".".FILEEXTENSION),ENT_QUOTES,'UTF-8')?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/pixelgyro-bootstrap.css">
 <style>
 .slide {
