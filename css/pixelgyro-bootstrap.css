@@ -7033,11 +7033,11 @@ button.close {
 }
 /* Special Styles for Pixelgyro */
 .navigation.dark {
-  padding: 10px 0;
+  padding: 10px 0 10px;
   background: #000;
   color: #ddd;
   font-size: 12px;
-  border-top: solid 1px #666;
+  border-top: solid 1px #666666;
   position: fixed;
   width: 100%;
   bottom: 0;

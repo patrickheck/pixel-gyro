@@ -1,15 +1,21 @@
 /* Special Styles for Pixelgyro */
 
+@pixel-gyro-nav-padding-top: 10px;
+@pixel-gyro-nav-padding-bottom: 10px;
+@pixel-gyro-nav-border-top: 1px;
+
+@pixel-gyro-nav-height: @pixel-gyro-nav-padding-top + @pixel-gyro-nav-padding-bottom + @pixel-gyro-nav-border-top + @line-height-computed;
+
 .navigation.dark {
-	padding: 10px 0;
+	padding: @pixel-gyro-nav-padding-top 0 @pixel-gyro-nav-padding-bottom ;
 	background: #000;
 	color: #ddd;
 	font-size: 12px;
-	border-top: solid 1px #666;
+	border-top: solid @pixel-gyro-nav-border-top #666;
 	position:fixed;
 	width: 100%;
 	bottom: 0;
-	height: 41px;
+	height: @pixel-gyro-nav-height;
 	.paging {
 		a {
 			font-size: 18px;
@@ -32,10 +38,10 @@
 		}
 	}
 }
-.slide{
+.slide {
 	text-align:center;
 	margin: 0 auto;
 	&.with-nav {
-		margin-bottom: 41px;
+		margin-bottom: @pixel-gyro-nav-height;
 	}
 }
